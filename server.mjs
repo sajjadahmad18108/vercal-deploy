@@ -1,11 +1,11 @@
-import express from "express";
+import express from "express"
 
-const app = express();
+const app = express()
+const PORT = 3000
 
-// Define your routes
 app.get('/user', (req, res) => {
-    res.send("This is the User page");
+    res.send("This is the Home page");
 });
-
-// Export the app to be used in Vercel's serverless function
-export default app;
+app.listen(PORT , ()=>{
+    console.log(`The server is listening on http://localhost:${PORT}`)
+})
