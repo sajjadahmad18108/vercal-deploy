@@ -1,16 +1,20 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "server.mjs",
-        "use": "@vercel/node"
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.mjs",
+      "use": "@vercel/node",
+      "config": {
+        "nodeVersion": "18.x"  // Use a Node.js version that supports ESM
       }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "server.mjs"
-      }
-    ]
-  }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.mjs"
+    }
+  ]
+}
+
   
