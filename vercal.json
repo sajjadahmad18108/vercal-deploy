@@ -3,10 +3,7 @@
   "builds": [
     {
       "src": "server.mjs",
-      "use": "@vercel/node",
-      "config": {
-        "nodeVersion": "18.x"  // Use a Node.js version that supports ESM
-      }
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -16,5 +13,3 @@
     }
   ]
 }
-
-  
