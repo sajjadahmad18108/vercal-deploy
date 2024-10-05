@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
     res.send("This is the Home");
 });
 app.get('/user', (req, res) => {
-    res.send("This is the Home page");
+    res.send("This is the user page");
 });
 app.listen(PORT , ()=>{
     console.log(`The server is listening on http://localhost:${PORT}`)
